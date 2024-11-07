@@ -5,11 +5,11 @@ React frontend and nodejs backend servers for web application of media feed, tex
 The project is based on the code of online web development courses which creator finished.
 
 
-Contributions are welcome to improve the project.
+Contributions are welcome to improve the project and looking for contributor.
 ([Please look at contributing section](#Contributing))
 
-### Demo
-[demo page](https://ud-gqlapi-front.firebaseapp.com)
+### Web site
+[web site](https://watakura.xyz) based on this repository
 
 ## Getting started
 
@@ -26,20 +26,20 @@ For frontend app, feed and auth backend server is required to run.
 
 To login or logout as test user in frontend app, please use buttons in bottom part of top page
 
+If higher level of vulnerbility issue happens during installing dependency (that is probably not problems for testing), and 'npm audit fix' command doesn't solve problems, please try to use lower version of nodejs (such as v12.22.8) after deleting node_modules and package-lock.json.
 
 ### backend 
 
 feed and auth backend server 
 
-(currently image upload does not work becase of storage issue)
 ```
 cd backend/ud-rest-gql-nodejs-api
 npm install
 npm start
 
 feed and auth server will start on port 8093
+uploaded feed images are stored locally in images folder
 ```
-
 
 talk backend server (server for talk page)
 ```
@@ -50,7 +50,7 @@ npm run dev
 talk server will start on port 4011
 ```
 
-group backend server (server for group page)
+group backend server (server for group page, currently image upload not work because of storage issue)
 ```
 cd backend/socket-rtc-group-nodejs
 npm install
@@ -66,7 +66,7 @@ talk or group sever is required to use talk or group page.
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+email (kmpartner@outlook.com), or any other method with the owners of this repository before making a change. 
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
